@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protected</title>
+        <link rel="stylesheet" typ="text/css" href="{% static 'styles/styles.css' %}">
+    </head>
+    <div class="container">
+        <h2>Protected Page</h2>
+        <p>.. OK                                             OK
+            Applying auth.0010_alter_group_name_max_length...  Applying auth.0012_ OK
+            Applying auth.0011_update_proxy_permissions... OK  Applying auth.0012_alter_user_first_name_max_length... OK                                     CTS\Django Auth\mypro
+            Applying sessions.0001_initial... OK</p>
+        <a href="{% url 'home' %}">Home</a>
+    </div>
+</html>

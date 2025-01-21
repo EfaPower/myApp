@@ -1,0 +1,11 @@
+{
+    "builds": [{
+        "src": "myproject/wsgi.py",
+        "use": "@vercel/python",
+        "config": {"maxLambdaSize": "15mb", "runtime": "Python 3.12.2"}
+    }],
+    "rooutes": [{
+        "src": "/(.*)",
+        "dest": "myproject/wsgi.py"
+    }]
+}
